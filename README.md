@@ -45,3 +45,12 @@ start nodemon
 ```
 - Follow the file path in quotes, opens a second command prompt and initiates nodemon in that location. 
 
+Update 04/26/16:  
+
+If you need to ensure that one command finishes executing prior to others running add the /wait 
+For instance, I need webpack to finish it's operation prior to running other things, so: 
+
+```
+cd "C:\Users\Erica\Desktop\AfterHoursProjects\react-blog"
+start /wait webpack
+```
